@@ -36,7 +36,7 @@
   <div class="tag">Eat for your goal</div>
 
   <h1>Privacy Policy</h1>
-  <div class="updated">Effective date: 15 July 2026 · Last updated: 15 July 2026</div>
+  <div class="updated">Effective date: 15 July 2026 · Last updated: 1 November 2026</div>
   <p class="intro">This Privacy Policy describes how SY Global LLC handles personal information in connection with the VITORY mobile application.</p>
 
   <h2>1. Who we are</h2>
@@ -80,15 +80,25 @@
   <ul>
     <li><strong>Service providers / processors</strong> that operate the App under contract and may process data only on our instructions:
       <ul>
-        <li><strong>Supabase</strong> - database, authentication, and hosting.</li>
+        <li><strong>Supabase</strong> - database, authentication, and file storage (including screenshots you attach to a support conversation).</li>
+        <li><strong>Cloudflare</strong> - hosting for our website and the small services the App calls (support, recipe import, sharing, billing), and privacy-friendly website analytics.</li>
         <li><strong>Google and Apple</strong> - only if you use their sign-in, to authenticate you.</li>
-        <li><strong>Apple and our subscription manager (RevenueCat)</strong> - to process purchases and report entitlement status (when paid plans are available).</li>
+        <li><strong>Apple and our subscription manager (RevenueCat)</strong> - to process purchases, restores and renewals and report whether your subscription is active. We never receive your card details.</li>
+        <li><strong>Anthropic</strong> (AI model provider) - see "AI features" below.</li>
+        <li><strong>Resend</strong> - to send account emails (such as password resets) and replies from our support team.</li>
+        <li><strong>Sentry</strong> - crash and error reports (device model, app version, and what failed), so we can fix bugs. We do not send your meals, body data or messages in these reports.</li>
       </ul>
     </li>
     <li><strong>Legal and safety</strong> - when required by law, regulation, legal process, or to protect the rights, property, or safety of VITORY, our users, or others.</li>
     <li><strong>Business transfers</strong> - in connection with a merger, acquisition, financing, or sale of assets, subject to this policy.</li>
   </ul>
-  <p>Our recipe library and images are created by us in advance using AI tools (including services from Anthropic and OpenAI). <strong>Your personal information is not sent to those AI providers</strong>; they are used to build shared content, not to process your individual data.</p>
+  <h3>AI features</h3>
+  <p>Our recipe library and images are created by us in advance using AI tools (including services from Anthropic and OpenAI); that process uses no personal information. Two features in the App do send information to <strong>Anthropic</strong>, an AI provider, and only when you use them:</p>
+  <ul>
+    <li><strong>Support chat.</strong> The messages you write are sent to Anthropic's models to draft an answer. If your conversation is passed to our specialist, it also sees a summary of your account (your targets, diet and allergy settings, plan and subscription status) so it can help. The App tells you this, and asks you to agree, before your first message. A person on our team can read the conversation if it is escalated.</li>
+    <li><strong>Import a recipe.</strong> The ingredient lines from the web page you import may be sent to Anthropic to recognize unusual ingredient names. Your account details are not included.</li>
+  </ul>
+  <p>Anthropic processes this data on our behalf under its commercial terms, which do not permit it to train its models on your content. Allergy and nutrition answers never come from AI: they are calculated by our own code from verified data.</p>
 
   <h2>7. International data transfers</h2>
   <p>We are based in the United States, and our providers may process data in the United States and other countries. Where we transfer personal data from the EEA, UK, or Switzerland, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses (and the UK Addendum), or another lawful transfer mechanism.</p>
@@ -96,10 +106,13 @@
   <h2>8. Data retention</h2>
   <p>We keep personal information for as long as your account is active or as needed to provide the Service. When you delete your account, we permanently delete your account and associated personal data from our active systems, except where retention is required by law (for example, tax or accounting records) or for the establishment or defense of legal claims. Backups are purged on a rolling basis.</p>
 
-  <h2>9. Security</h2>
+    <p><strong>Free-week records.</strong> To keep the free week to one per person, we keep a record that a free week was used, linked to coded (hashed) versions of your email address and of a random identifier stored on your phone. These codes cannot be turned back into your email or identify your device on their own. We keep them for up to 2 years after your account is deleted, solely to prevent repeated free trials (a legitimate interest), and then delete them.</p>
+  <p><strong>Purchase records.</strong> Records of App Store purchase events (dates, product, status) are kept for as long as needed for tax, accounting and dispute purposes.</p>
+
+<h2>9. Security</h2>
   <p>We use reasonable and appropriate technical and organizational measures designed to protect personal information, including encryption in transit, row-level access controls, and least-privilege access. No system is perfectly secure, and we cannot guarantee absolute security. You are responsible for keeping your login credentials confidential.</p>
 
-  <h2>10. Your privacy rights</h2>
+  <h2 id="rights">10. Your privacy rights</h2>
 
   <h3>Everyone</h3>
   <p>You can <strong>permanently delete your account and all associated data at any time</strong> from <em>Profile → Delete account</em> inside the App. You can also view and edit your inputs in the App at any time.</p>
